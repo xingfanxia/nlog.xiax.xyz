@@ -15,7 +15,7 @@ const Utterances = ({ issueTerm, layout }) => {
     script.setAttribute('src', 'https://utteranc.es/client.js')
     script.setAttribute('crossorigin', 'anonymous')
     script.setAttribute('async', true)
-    script.setAttribute('repo', BLOG.comment.utterancesConfig.repo)
+    script.setAttribute('repo', 'xingfanxia/nlog.xiax.xyz')
     script.setAttribute('issue-term', issueTerm)
     script.setAttribute('theme', theme)
     anchor.appendChild(script)
