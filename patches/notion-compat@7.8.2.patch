@@ -1,0 +1,238 @@
+diff --git a/build/index.js b/build/index.js
+index 281d33181ef65517da463f93f6e4b40ba98068e8..076dd3a070143a62bf999e3325479c8f87a0fbc9 100644
+--- a/build/index.js
++++ b/build/index.js
+@@ -12,27 +12,30 @@ function convertColor(color) {
+ 
+ // src/convert-rich-text.ts
+ function convertRichText(richText) {
++  if (!richText || !Array.isArray(richText)) return [];
+   return richText.map(convertRichTextItem).filter(Boolean);
+ }
+ function convertRichTextItem(richTextItem) {
++  if (!richTextItem) return null;
+   const subdecorations = [];
+-  if (richTextItem.annotations.bold) {
++  const annotations = richTextItem.annotations || {};
++  if (annotations.bold) {
+     subdecorations.push(["b"]);
+   }
+-  if (richTextItem.annotations.italic) {
++  if (annotations.italic) {
+     subdecorations.push(["i"]);
+   }
+-  if (richTextItem.annotations.strikethrough) {
++  if (annotations.strikethrough) {
+     subdecorations.push(["s"]);
+   }
+-  if (richTextItem.annotations.underline) {
++  if (annotations.underline) {
+     subdecorations.push(["_"]);
+   }
+-  if (richTextItem.annotations.code) {
++  if (annotations.code) {
+     subdecorations.push(["c"]);
+   }
+-  if (richTextItem.annotations.color !== "default") {
+-    subdecorations.push(["h", convertColor(richTextItem.annotations.color)]);
++  if (annotations.color && annotations.color !== "default") {
++    subdecorations.push(["h", convertColor(annotations.color)]);
+   }
+   const details = richTextItem[richTextItem.type];
+   if (details && typeof details === "object") {
+@@ -43,9 +46,9 @@ function convertRichTextItem(richTextItem) {
+   switch (richTextItem.type) {
+     case "text":
+       if (subdecorations.length) {
+-        return [richTextItem.text.content, subdecorations];
++        return [richTextItem.text?.content || "", subdecorations];
+       } else {
+-        return [richTextItem.text.content];
++        return [richTextItem.text?.content || ""];
+       }
+     case "equation":
+       if (richTextItem.equation?.expression) {
+@@ -57,13 +60,13 @@ function convertRichTextItem(richTextItem) {
+       if (mention) {
+         switch (mention.type) {
+           case "link_preview":
+-            subdecorations.push(["a", mention.link_preview.url]);
++            subdecorations.push(["a", mention.link_preview?.url]);
+             break;
+           case "page":
+-            subdecorations.push(["p", mention.page.id]);
++            subdecorations.push(["p", mention.page?.id]);
+             return ["\u2023", subdecorations];
+           case "database":
+-            subdecorations.push(["p", mention.database.id]);
++            subdecorations.push(["p", mention.database?.id]);
+             return ["\u2023", subdecorations];
+           case "date":
+             subdecorations.unshift([
+@@ -71,14 +74,14 @@ function convertRichTextItem(richTextItem) {
+               {
+                 type: "date",
+                 // TODO
+-                start_date: mention.date.start,
+-                end_date: mention.date.end || void 0,
+-                time_zone: mention.date.time_zone || void 0
++                start_date: mention.date?.start,
++                end_date: mention.date?.end || void 0,
++                time_zone: mention.date?.time_zone || void 0
+               }
+             ]);
+             break;
+           case "user":
+-            subdecorations.push(["u", mention.user.id]);
++            subdecorations.push(["u", mention.user?.id]);
+             break;
+           case "template_mention":
+             break;
+@@ -86,7 +89,7 @@ function convertRichTextItem(richTextItem) {
+             break;
+         }
+       }
+-      return [richTextItem.plain_text, subdecorations];
++      return [richTextItem.plain_text || "", subdecorations];
+     }
+     default:
+       return [""];
+@@ -172,24 +175,25 @@ function convertBlock({
+           compatBlock.format.page_icon = blockDetails.icon.emoji;
+           break;
+         case "external":
+-          compatBlock.format.page_icon = blockDetails.icon.external.url;
++          compatBlock.format.page_icon = blockDetails.icon?.external?.url;
+           break;
+         case "file":
+-          compatBlock.format.page_icon = blockDetails.icon.file.url;
++          compatBlock.format.page_icon = blockDetails.icon?.file?.url;
+           break;
+       }
+     }
+     if (blockDetails.type) {
+       switch (blockDetails.type) {
+         case "external":
+-          compatBlock.properties.source = [[blockDetails.external.url]];
++          compatBlock.properties.source = [[blockDetails.external?.url]];
+           break;
+         case "file":
+-          compatBlock.properties.source = [[blockDetails.file.url]];
++          compatBlock.properties.source = [[blockDetails.file?.url]];
+           break;
+       }
+     }
+   }
++  try {
+   switch (block.type) {
+     case "paragraph":
+       compatBlock.type = "text";
+@@ -222,7 +226,7 @@ function convertBlock({
+     case "toggle":
+       break;
+     case "code":
+-      if (block.code.language) {
++      if (block.code?.language) {
+         compatBlock.properties.language = [[block.code.language]];
+       }
+       break;
+@@ -241,10 +245,10 @@ function convertBlock({
+     case "column":
+       break;
+     case "bookmark":
+-      if (block.bookmark.url) {
++      if (block.bookmark?.url) {
+         compatBlock.properties.link = [[block.bookmark.url]];
+       }
+-      if (block.bookmark.caption) {
++      if (block.bookmark?.caption) {
+         compatBlock.properties.description = convertRichText(
+           block.bookmark.caption
+         );
+@@ -272,7 +276,7 @@ function convertBlock({
+       if (pageMap) {
+         const page = pageMap[block.id];
+         if (page) {
+-          if (page.properties.title) {
++          if (page.properties?.title) {
+             compatBlock.properties.title = convertRichText(
+               page.properties.title.rich_text
+             );
+@@ -280,10 +284,10 @@ function convertBlock({
+           if (page.cover) {
+             switch (page.cover.type) {
+               case "external":
+-                compatBlock.format.page_cover = page.cover.external.url;
++                compatBlock.format.page_cover = page.cover.external?.url;
+                 break;
+               case "file":
+-                compatBlock.format.page_cover = page.cover.file.url;
++                compatBlock.format.page_cover = page.cover.file?.url;
+                 break;
+             }
+             compatBlock.format.page_cover_position = 0.5;
+@@ -294,10 +298,10 @@ function convertBlock({
+                 compatBlock.format.page_icon = page.icon.emoji;
+                 break;
+               case "external":
+-                compatBlock.format.page_icon = page.icon.external.url;
++                compatBlock.format.page_icon = page.icon.external?.url;
+                 break;
+               case "file":
+-                compatBlock.format.page_icon = page.icon.file.url;
++                compatBlock.format.page_icon = page.icon.file?.url;
+                 break;
+             }
+           }
+@@ -325,7 +329,7 @@ function convertBlock({
+     case "template":
+       break;
+     case "synced_block":
+-      if (block.synced_block.synced_from) {
++      if (block.synced_block?.synced_from) {
+         compatBlock.type = "transclusion_reference";
+         compatBlock.format.transclusion_reference_pointer = {
+           id: block.synced_block.synced_from.block_id,
+@@ -343,7 +347,7 @@ function convertBlock({
+     case "child_database":
+       break;
+     case "table":
+-      if (blockDetails.table_width && blockDetails.table_width > 0) {
++      if (blockDetails?.table_width && blockDetails.table_width > 0) {
+         compatBlock.format.table_block_column_order = Array.from(
+           { length: blockDetails.table_width },
+           (_, i) => "" + i
+@@ -358,10 +362,10 @@ function convertBlock({
+           };
+         });
+       }
+-      if (blockDetails.has_column_header) {
++      if (blockDetails?.has_column_header) {
+         compatBlock.format.table_block_column_header = blockDetails.has_column_header;
+       }
+-      if (blockDetails.has_row_header) {
++      if (blockDetails?.has_row_header) {
+         compatBlock.format.table_block_row_header = blockDetails.has_row_header;
+       }
+       break;
+@@ -452,8 +456,8 @@ function convertBlock({
+         compatBlock.properties.source = [
+           [block.image.file?.url || block.image.external?.url]
+         ];
+-        if (block.image.caption) {
+-          compatBlock.properties.caption = block.image.caption.map(
++        if (block.image.caption && Array.isArray(block.image.caption)) {
++          compatBlock.properties.caption = block.image.caption.filter(Boolean).map(
+             (caption) => convertRichText([caption])
+           );
+         }
+@@ -466,6 +470,9 @@ function convertBlock({
+     case "unsupported":
+       break;
+   }
++  } catch (err) {
++    console.warn("notion-compat: failed converting block", block.id, block.type, err.message);
++  }
+   return compatBlock;
+ }
+ 

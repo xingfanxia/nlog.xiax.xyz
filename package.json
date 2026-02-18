@@ -47,5 +47,9 @@
     "url": "https://github.com/craigary/nobelium/issues",
     "email": "i@craigary.net"
   },
-  "pnpm": {}
+  "pnpm": {
+    "patchedDependencies": {
+      "notion-compat@7.8.2": "patches/notion-compat@7.8.2.patch"
+    }
+  }
 }

@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  notion-compat@7.8.2:
+    hash: bxrecjrpsknujf2xuyor3k7nsy
+    path: patches/notion-compat@7.8.2.patch
+
 importers:
 
   .:
@@ -31,7 +36,7 @@ importers:
         version: 15.5.12(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       notion-compat:
         specifier: ^7.8.2
-        version: 7.8.2(@notionhq/client@2.2.15)
+        version: 7.8.2(patch_hash=bxrecjrpsknujf2xuyor3k7nsy)(@notionhq/client@2.2.15)
       notion-utils:
         specifier: ^7.8.2
         version: 7.8.2
@@ -5075,7 +5080,7 @@ snapshots:
 
   normalize-url@8.1.1: {}
 
-  notion-compat@7.8.2(@notionhq/client@2.2.15):
+  notion-compat@7.8.2(patch_hash=bxrecjrpsknujf2xuyor3k7nsy)(@notionhq/client@2.2.15):
     dependencies:
       '@notionhq/client': 2.2.15
       notion-types: 7.8.2
