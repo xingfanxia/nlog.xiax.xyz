@@ -32,7 +32,7 @@ export default function Post (props) {
       )}>
         {post.title}
       </h1>
-      {post.type[0] !== 'Page' && (
+      {post.type !== 'Page' && (
         <nav className={cn(
           'w-full flex mt-7 items-start text-gray-500 dark:text-gray-400',
           { 'max-w-2xl px-4': !fullWidth }

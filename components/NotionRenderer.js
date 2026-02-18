@@ -13,7 +13,10 @@ const components = {
   // Code block
   Code: dynamic(async () => {
     return function CodeSwitch (props) {
-      switch (getTextContent(props.block.properties.language)) {
+      const language = props.block?.properties?.language
+        ? getTextContent(props.block.properties.language)
+        : ''
+      switch (language) {
         case 'Mermaid':
           return h(
             dynamic(() => {
@@ -79,15 +82,6 @@ const components = {
   Pdf: dynamic(() => {
     return import('react-notion-x/build/third-party/pdf').then(module => module.Pdf)
   }, { ssr: false }),
-  // Tweet block
-  Tweet: dynamic(() => {
-    return import('react-tweet-embed').then(module => {
-      const { default: TweetEmbed } = module
-      return function Tweet ({ id }) {
-        return <TweetEmbed tweetId={id} options={{ theme: 'dark' }} />
-      }
-    })
-  }),
 
   /* Overrides */
 
@@ -111,15 +105,14 @@ export default function NotionRenderer (props) {
   const font = {
     'sans-serif': FONTS_SANS,
     'serif': FONTS_SERIF
-  }[config.font]
+  }[config?.font]
 
   // Mark block types to be custom rendered by appending a suffix
   if (props.recordMap) {
-    for (const { value: block } of Object.values(props.recordMap.block)) {
-      switch (block?.type) {
-        case 'toggle':
-          block.type += '_nobelium'
-          break
+    for (const blockData of Object.values(props.recordMap.block)) {
+      const block = blockData?.value
+      if (block?.type === 'toggle') {
+        block.type = 'toggle_nobelium'
       }
     }
   }

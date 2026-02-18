@@ -3,8 +3,31 @@ import { getPageTableOfContents } from 'notion-utils'
 import cn from 'classnames'
 
 export default function TableOfContents ({ blockMap, className, style }) {
-  const collectionId = Object.keys(blockMap.collection)[0]
-  const page = Object.values(blockMap.block).find(block => block.value.parent_id === collectionId).value
+  if (!blockMap?.block) return null
+
+  // Find the page block — try collection-based lookup first, then fall back to finding a page block
+  let page = null
+
+  if (blockMap.collection) {
+    const collectionId = Object.keys(blockMap.collection)[0]
+    if (collectionId) {
+      const found = Object.values(blockMap.block).find(
+        block => block.value?.parent_id === collectionId
+      )
+      page = found?.value
+    }
+  }
+
+  if (!page) {
+    // Fallback: find the first page-type block in the recordMap
+    const found = Object.values(blockMap.block).find(
+      block => block.value?.type === 'page'
+    )
+    page = found?.value
+  }
+
+  if (!page) return null
+
   const nodes = getPageTableOfContents(page, blockMap)
 
   if (!nodes.length) return null
@@ -17,7 +40,6 @@ export default function TableOfContents ({ blockMap, className, style }) {
     const target = document.querySelector(`.notion-block-${id}`)
     if (!target) return
     // `65` is the height of expanded nav
-    // TODO: Remove the magic number
     const top = document.documentElement.scrollTop + target.getBoundingClientRect().top - 65
     document.documentElement.scrollTo({
       top,

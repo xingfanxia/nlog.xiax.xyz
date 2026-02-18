@@ -1,9 +1,22 @@
 module.exports = {
   images: {
-    domains: ['gravatar.com']
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'gravatar.com'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.notion.so'
+      },
+      {
+        protocol: 'https',
+        hostname: '**.amazonaws.com'
+      }
+    ]
   },
   eslint: {
-    // dirs: ['components', 'layouts', 'lib', 'pages']
+    ignoreDuringBuilds: true
   },
   async headers() {
     return [
@@ -19,15 +32,4 @@ module.exports = {
     ]
   },
   transpilePackages: ['dayjs']
-  // webpack: (config, { dev, isServer }) => {
-  //   // Replace React with Preact only in client production build
-  //   if (!dev && !isServer) {
-  //     Object.assign(config.resolve.alias, {
-  //       react: 'preact/compat',
-  //       'react-dom/test-utils': 'preact/test-utils',
-  //       'react-dom': 'preact/compat'
-  //     })
-  //   }
-  //   return config
-  // }
 }

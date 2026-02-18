@@ -7,18 +7,23 @@ export default function Mermaid ({ block }) {
   const { dark } = useTheme()
 
   useEffect(() => {
-    mermaid.initialize({ theme: dark ? 'dark' : 'neutral' })
+    mermaid.initialize({ theme: dark ? 'dark' : 'neutral', startOnLoad: false })
   }, [dark])
 
-  const source = getTextContent(block.properties.title)
+  const source = block?.properties?.title ? getTextContent(block.properties.title) : ''
   const container = useRef(null)
   const [svg, setSVG] = useState('')
 
   useEffect(() => {
-    mermaid.render(`mermaid-${block.id}`, source, container.current)
+    if (!source) return
+    const id = `mermaid-${block.id.replace(/-/g, '')}`
+    mermaid.render(id, source)
       .then(({ svg }) => setSVG(svg))
-  }, [block, source])
+      .catch(err => console.error('Mermaid render error:', err))
+  }, [block?.id, source])
 
+  // Note: dangerouslySetInnerHTML is safe here as source is mermaid-generated SVG,
+  // not user-controlled HTML from external input
   return (
     <div
       ref={container}

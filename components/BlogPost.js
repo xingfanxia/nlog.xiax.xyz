@@ -20,6 +20,18 @@ const BlogPost = ({ post }) => {
           <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-300">
             {post.summary}
           </p>
+          {post.tags && post.tags.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-2">
+              {post.tags.map(tag => (
+                <span
+                  key={tag}
+                  className="text-xs px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </main>
       </article>
     </Link>
