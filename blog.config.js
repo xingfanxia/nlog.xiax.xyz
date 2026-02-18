@@ -2,7 +2,7 @@ const BLOG = {
   title: 'A Cat Entertainer',
   author: 'Xingfan Xia',
   email: 'xingfanxia@gmail.com',
-  link: 'https://nlog.xiax.xyz',
+  link: 'https://blog.ax0x.ai',
   description: 'Just A Tech Blog',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'America/Los_Angeles', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
