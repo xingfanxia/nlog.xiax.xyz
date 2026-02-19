@@ -2,32 +2,49 @@ import { config } from '@/lib/server/config'
 
 import Container from '@/components/Container'
 import BlogPost from '@/components/BlogPost'
+import SeriesCard from '@/components/SeriesCard'
 import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
+import { groupPostsWithSeries } from '@/lib/groupPostsWithSeries'
 
-const Page = ({ postsToShow, page, showNext }) => {
+const Page = ({ itemsToShow, page, showNext }) => {
   return (
     <Container>
-      {postsToShow &&
-        postsToShow.map(post => <BlogPost key={post.id} post={post} />)}
+      {itemsToShow &&
+        itemsToShow.map(item =>
+          item.type === 'series'
+            ? (
+              <SeriesCard
+                key={`series-${item.name}`}
+                name={item.name}
+                posts={item.posts}
+                latestDate={item.latestDate}
+                earliestDate={item.earliestDate}
+              />
+              )
+            : (
+              <BlogPost key={item.post.id} post={item.post} />
+              )
+        )}
       <Pagination page={page} showNext={showNext} />
     </Container>
   )
 }
 
 export async function getStaticProps (context) {
-  const { page } = context.params // Get Current Page No.
+  const { page } = context.params
   const posts = await getAllPosts({ includePages: false })
-  const postsToShow = posts.slice(
+  const allItems = groupPostsWithSeries(posts)
+  const itemsToShow = allItems.slice(
     config.postsPerPage * (page - 1),
     config.postsPerPage * page
   )
-  const totalPosts = posts.length
-  const showNext = page * config.postsPerPage < totalPosts
+  const totalItems = allItems.length
+  const showNext = page * config.postsPerPage < totalItems
   return {
     props: {
-      page, // Current Page
-      postsToShow,
+      page,
+      itemsToShow,
       showNext
     },
     revalidate: 1
@@ -36,10 +53,10 @@ export async function getStaticProps (context) {
 
 export async function getStaticPaths () {
   const posts = await getAllPosts({ includePages: false })
-  const totalPosts = posts.length
-  const totalPages = Math.ceil(totalPosts / config.postsPerPage)
+  const allItems = groupPostsWithSeries(posts)
+  const totalItems = allItems.length
+  const totalPages = Math.ceil(totalItems / config.postsPerPage)
   return {
-    // remove first page, we 're not gonna handle that.
     paths: Array.from({ length: totalPages - 1 }, (_, i) => ({
       params: { page: '' + (i + 2) }
     })),

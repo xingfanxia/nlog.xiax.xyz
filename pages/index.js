@@ -2,33 +2,48 @@ import { clientConfig } from '@/lib/server/config'
 
 import Container from '@/components/Container'
 import BlogPost from '@/components/BlogPost'
+import SeriesCard from '@/components/SeriesCard'
 import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
+import { groupPostsWithSeries } from '@/lib/groupPostsWithSeries'
 import { useConfig } from '@/lib/config'
 
 export async function getStaticProps () {
   const posts = await getAllPosts({ includePages: false })
-  const postsToShow = posts.slice(0, clientConfig.postsPerPage)
-  const totalPosts = posts.length
-  const showNext = totalPosts > clientConfig.postsPerPage
+  const allItems = groupPostsWithSeries(posts)
+  const itemsToShow = allItems.slice(0, clientConfig.postsPerPage)
+  const totalItems = allItems.length
+  const showNext = totalItems > clientConfig.postsPerPage
   return {
     props: {
-      page: 1, // current page is 1
-      postsToShow,
+      page: 1,
+      itemsToShow,
       showNext
     },
     revalidate: 1
   }
 }
 
-export default function Blog ({ postsToShow, page, showNext }) {
+export default function Blog ({ itemsToShow, page, showNext }) {
   const { title, description } = useConfig()
 
   return (
     <Container title={title} description={description}>
-      {postsToShow.map(post => (
-        <BlogPost key={post.id} post={post} />
-      ))}
+      {itemsToShow.map(item =>
+        item.type === 'series'
+          ? (
+            <SeriesCard
+              key={`series-${item.name}`}
+              name={item.name}
+              posts={item.posts}
+              latestDate={item.latestDate}
+              earliestDate={item.earliestDate}
+            />
+            )
+          : (
+            <BlogPost key={item.post.id} post={item.post} />
+            )
+      )}
       {showNext && <Pagination page={page} showNext={showNext} />}
     </Container>
   )

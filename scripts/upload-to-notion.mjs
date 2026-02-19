@@ -344,6 +344,9 @@ function buildPropertyValue (schema, propName, type, value) {
         }
       }
 
+    case 'number':
+      return { [actualName]: { number: value } }
+
     case 'date':
       return { [actualName]: { date: { start: value } } }
 
@@ -423,6 +426,14 @@ async function uploadArticle (filePath, schema, existingSlugs, status) {
 
   if (meta.tags) {
     Object.assign(properties, buildPropertyValue(schema, 'tags', 'multi_select', meta.tags))
+  }
+
+  if (meta.series) {
+    Object.assign(properties, buildPropertyValue(schema, 'series', 'select', meta.series))
+  }
+
+  if (meta.part) {
+    Object.assign(properties, buildPropertyValue(schema, 'part', 'number', Number(meta.part)))
   }
 
   // Convert markdown body to Notion blocks
