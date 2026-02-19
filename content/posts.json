@@ -1,0 +1,327 @@
+[
+  {
+    "id": "30ce3dcd-5100-811c-b83c-ce71013646a4",
+    "title": "Agent经济：市场、数字分身与代理社交网络",
+    "slug": "the-agent-economy-zh",
+    "summary": "Agent将替你生活——社交、谈判、筛选。Agent身份、支付、声誉和代理社交网络的基础设施是下一个平台级机会。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI知己愿景",
+    "part": 3,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-812a-b676-c3fcac827871",
+    "title": "愿景：构建真正理解你的AI",
+    "slug": "the-companion-vision-zh",
+    "summary": "为什么现有AI伴侣都失败了，以及如何通过记忆编排、多Agent架构和对话式人格建模构建一个真正理解你的AI伴侣。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI知己愿景",
+    "part": 1,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-813f-8173-cbacf4bd9fdb",
+    "title": "The Agent Economy: Marketplaces, Digital Twins, and Proxy Social Networks",
+    "slug": "the-agent-economy",
+    "summary": "Agents will live your life for you — socializing, negotiating, filtering. The infrastructure for agent identity, payment, reputation, and proxy social networks is the next platform play.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI Companion Vision",
+    "part": 3,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-8168-be22-f43786c1436f",
+    "title": "Wearables Are the Nervous System of AI Companions",
+    "slug": "wearables-and-companions",
+    "summary": "AI companions need a sensory system. Wearables — rings, pendants, bracelets disguised as fashion — give AI the ability to feel what you're feeling and shift from reactive to proactive care.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI Companion Vision",
+    "part": 2,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81f7-8d1b-d323382f3195",
+    "title": "可穿戴设备：AI伴侣的神经系统",
+    "slug": "wearables-and-companions-zh",
+    "summary": "AI伴侣需要感知系统。可穿戴设备——伪装成时尚饰品的戒指、吊坠、手链——赋予AI感受你感受的能力，从被动回应转为主动关怀。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI知己愿景",
+    "part": 2,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81fe-802d-c0e75ca80230",
+    "title": "The Companion Vision: Building AI That Truly Understands You",
+    "slug": "the-companion-vision",
+    "summary": "Why AI companions fail today and how to build one that truly understands you through memory orchestration, multi-agent architecture, and conversational personality modeling.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI Companion Vision",
+    "part": 1,
+    "date": 1771488000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-812a-8a28-d6979842a8e9",
+    "title": "What I Learned Shipping a Real Product as a Solo AI-Augmented Developer",
+    "slug": "panpanmao-series-03-lessons-learned",
+    "summary": "Part 3 of 3: Honest lessons from building PanPanMao. AI bridging domain knowledge (with caveats), product vs engineering, the agentic coding workflow, and the era of the solo AI-augmented builder.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "The PanPanMao Story",
+    "part": 3,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-8191-beee-c408ad8d8cc9",
+    "title": "Why I Built an AI Fortune-Telling App With Zero Domain Knowledge",
+    "slug": "panpanmao-series-01-why-zero-domain-knowledge",
+    "summary": "Part 1 of 3: A big-tech engineer's journey into building PanPanMao -- an AI-powered Chinese metaphysics platform with 9 verticals, 1,134 commits in 29 days, and zero domain knowledge.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "The PanPanMao Story",
+    "part": 1,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-81c0-bcc8-d445810f8b50",
+    "title": "From 5 Standalone Apps to a Unified Platform in 29 Days",
+    "slug": "panpanmao-series-02-technical-build-story",
+    "summary": "Part 2 of 3: The technical build of PanPanMao across 4 phases -- monorepo consolidation, testing and branding, monetization, and the milestone rush. 1,134 commits, 85 endpoints, 9 verticals.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "The PanPanMao Story",
+    "part": 2,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-81f3-8745-c2cbada27693",
+    "title": "Day 29: What I Learned Building a Product I Know Nothing About",
+    "slug": "panpanmao-diary-07-reflections",
+    "summary": "PanPanMao build diary final entry: 29 days, 1,134 commits, 9 product verticals. Reflections on AI-augmented development, zero-knowledge domains, and the product vs engineering divide.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 7,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-817c-b2fb-c2b9e176f9fb",
+    "title": "Day 27: 98 Commits and Three New Products",
+    "slug": "panpanmao-diary-06-feature-explosion",
+    "summary": "PanPanMao build diary Day 27: The most productive single day. 98 commits. Three new products (child naming, compatibility analysis, annual forecast) from zero to production.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 6,
+    "date": 1771142400000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-8122-9aec-f5e4a5785f92",
+    "title": "Days 20-23: Shipping M1, M2, M3 in Four Days",
+    "slug": "panpanmao-diary-05-milestone-rush",
+    "summary": "PanPanMao build diary Days 20-23: 166 commits, 3 formal milestones, 17 PRs. Credit economy foundation, Daily Hub with pre-generated content, and PostHog analytics.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 5,
+    "date": 1770883200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-8125-9e6d-d86a5fb183c8",
+    "title": "Days 12-19: Credit Economy, New Features, and the Feature Explosion",
+    "slug": "panpanmao-diary-04-monetization-and-features",
+    "summary": "PanPanMao build diary Days 12-19: Referral system, palm reading with MediaPipe, landing page dark luxury redesign, and the realization that engineering is the easy part now.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 4,
+    "date": 1770537600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-8143-a2dd-e48023552f9c",
+    "title": "Days 5-10: From Code to Product (Testing, Landing Page, and the Cat Theme)",
+    "slug": "panpanmao-diary-03-testing-and-branding",
+    "summary": "PanPanMao build diary Days 5-10: Vitest testing sprint, the birth of the PanPanMao cat brand, landing page design, Stripe integration, and credit economy with dried fish treats.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 3,
+    "date": 1769760000000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-81e3-85bb-e4a7beac5052",
+    "title": "Days 2-4: The Monorepo Migration Sprint (111 Commits in 3 Days)",
+    "slug": "panpanmao-diary-02-migration-sprint",
+    "summary": "PanPanMao build diary Days 2-4: CSS restoration hell, extracting shared packages, adding MBTI app, WeChat browser detection, and the unified API layer with 52 migrated routes.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 2,
+    "date": 1769241600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30be3dcd-5100-812b-a601-c4dbd3fd9416",
+    "title": "Day 1: Why I'm Building a Fortune-Telling App (And I Know Nothing About Fortune-Telling)",
+    "slug": "panpanmao-diary-01-genesis",
+    "summary": "PanPanMao build diary Day 1: Starting a Chinese metaphysics AI platform with zero domain knowledge. 21 commits, monorepo setup, and the hypothesis that AI can bridge any knowledge gap.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "Building PanPanMao",
+    "part": 1,
+    "date": 1768982400000,
+    "fullWidth": false
+  },
+  {
+    "id": "20de3dcd-5100-8065-aca9-deafb459ad38",
+    "title": "From Rowers to Navigators: Thriving in the Age of AI",
+    "slug": "rower-to-navigator",
+    "summary": "",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "LLM",
+      "Agents",
+      "Software Development"
+    ],
+    "series": null,
+    "part": null,
+    "date": 1749366000000,
+    "fullWidth": false
+  },
+  {
+    "id": "182e3dcd-5100-80f3-b515-f8bf9b89cf03",
+    "title": "Managing AI Like a Software Development Manager: A New Paradigm for AI-Assisted Programming",
+    "slug": "manage-ai-like-a-sdm",
+    "summary": "",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "Software Development",
+      "Best Practices",
+      "AI"
+    ],
+    "series": null,
+    "part": null,
+    "date": 1737360000000,
+    "fullWidth": false
+  },
+  {
+    "id": "9daa614e-29d6-4ca6-8c58-9fff8947bfc2",
+    "title": "Projects",
+    "slug": "projects",
+    "summary": "",
+    "status": "Published",
+    "type": "Page",
+    "tags": [
+      "Learning"
+    ],
+    "series": null,
+    "part": null,
+    "date": 1711350000000,
+    "fullWidth": false
+  },
+  {
+    "id": "bbfb7109-374f-4da0-b9be-f0173b48b2e0",
+    "title": "About",
+    "slug": "about",
+    "summary": "",
+    "status": "Published",
+    "type": "Page",
+    "tags": [],
+    "series": null,
+    "part": null,
+    "date": 1711350000000,
+    "fullWidth": false
+  }
+]
