@@ -28,7 +28,7 @@ const BlogPost = ({ post }) => {
             href={`${BLOG.path}/${post.zhSlug}`}
             className="text-xs px-2 py-0.5 rounded-full border border-rose-300/60 dark:border-rose-700/50 text-rose-400 dark:text-rose-400/80 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors"
           >
-            中文
+            中文版
           </Link>
         )}
         {post.tags && post.tags.length > 0 && post.tags.map(tag => (
