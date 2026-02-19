@@ -9,9 +9,10 @@ import { createHash } from 'crypto'
 import Container from '@/components/Container'
 import Post from '@/components/Post'
 import SeriesNav from '@/components/SeriesNav'
+import LanguageToggle from '@/components/LanguageToggle'
 import Comments from '@/components/Comments'
 
-export default function BlogPost ({ post, blockMap, emailHash, seriesNav }) {
+export default function BlogPost ({ post, blockMap, emailHash, seriesNav, langToggle }) {
   const router = useRouter()
   const BLOG = useConfig()
   const locale = useLocale()
@@ -31,6 +32,19 @@ export default function BlogPost ({ post, blockMap, emailHash, seriesNav }) {
       type="article"
       fullWidth={fullWidth}
     >
+      {langToggle && (
+        <div className={cn(
+          'px-4 mb-4 flex justify-end',
+          fullWidth ? 'md:px-24' : 'mx-auto max-w-2xl w-full'
+        )}>
+          <LanguageToggle
+            currentSlug={langToggle.currentSlug}
+            otherSlug={langToggle.otherSlug}
+            isZh={langToggle.isZh}
+          />
+        </div>
+      )}
+
       <Post
         post={post}
         blockMap={blockMap}
@@ -133,8 +147,17 @@ export async function getStaticProps ({ params: { slug } }) {
     }
   }
 
+  // Detect language pair by slug convention: 'foo-zh' <-> 'foo'
+  let langToggle = null
+  const isZh = slug.endsWith('-zh')
+  const otherSlug = isZh ? slug.slice(0, -3) : `${slug}-zh`
+  const otherPost = posts.find(p => p.slug === otherSlug)
+  if (otherPost) {
+    langToggle = { currentSlug: slug, otherSlug, isZh }
+  }
+
   return {
-    props: { post, blockMap, emailHash, seriesNav },
+    props: { post, blockMap, emailHash, seriesNav, langToggle },
     revalidate: 1
   }
 }
