@@ -2,6 +2,16 @@ import FormattedDate from '@/components/FormattedDate'
 import { useConfig } from '@/lib/config'
 import Link from 'next/link'
 
+const ZhBadge = ({ href, onClick }) => (
+  <Link
+    href={href}
+    className="text-xs px-1.5 py-0.5 rounded-full border border-sky-300 dark:border-sky-700 text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors flex-shrink-0"
+    onClick={onClick}
+  >
+    中文
+  </Link>
+)
+
 const SeriesCard = ({ name, posts, latestDate, earliestDate, zhSeriesName }) => {
   const BLOG = useConfig()
 
@@ -20,13 +30,10 @@ const SeriesCard = ({ name, posts, latestDate, earliestDate, zhSeriesName }) => 
             {name}
           </Link>
           {zhSeriesName && (
-            <Link
+            <ZhBadge
               href={`/series/${encodeURIComponent(zhSeriesName)}`}
-              className="text-xs px-2 py-0.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors flex-shrink-0"
               onClick={e => e.stopPropagation()}
-            >
-              中文
-            </Link>
+            />
           )}
           <span className="text-xs text-gray-500 dark:text-gray-400 flex-shrink-0">
             {posts.length} parts
@@ -39,21 +46,25 @@ const SeriesCard = ({ name, posts, latestDate, earliestDate, zhSeriesName }) => 
 
       <div className="ml-2 mt-3 pl-4 border-l-2 border-gray-200 dark:border-gray-700 space-y-2">
         {posts.map((post, i) => (
-          <Link
-            key={post.id}
-            href={`${BLOG.path}/${post.slug}`}
-            className="flex items-baseline justify-between gap-2 py-1 hover:text-black dark:hover:text-gray-100 text-gray-700 dark:text-gray-300 transition-colors"
-          >
-            <span className="min-w-0">
+          <div key={post.id} className="flex items-baseline justify-between gap-2 py-1">
+            <Link
+              href={`${BLOG.path}/${post.slug}`}
+              className="min-w-0 hover:text-black dark:hover:text-gray-100 text-gray-700 dark:text-gray-300 transition-colors"
+            >
               <span className="text-xs text-gray-400 dark:text-gray-500 mr-2">
                 Part {post.part ?? i + 1}
               </span>
               <span className="text-sm">{post.title}</span>
+            </Link>
+            <span className="flex items-center gap-2 flex-shrink-0">
+              {post.hasZh && (
+                <ZhBadge href={`${BLOG.path}/${post.zhSlug}`} />
+              )}
+              <time className="text-xs text-gray-500 dark:text-gray-400">
+                <FormattedDate date={post.date} />
+              </time>
             </span>
-            <time className="text-xs text-gray-500 dark:text-gray-400 flex-shrink-0">
-              <FormattedDate date={post.date} />
-            </time>
-          </Link>
+          </div>
         ))}
       </div>
     </details>
