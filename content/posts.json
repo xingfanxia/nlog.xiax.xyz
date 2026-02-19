@@ -166,6 +166,76 @@
     "fullWidth": false
   },
   {
+    "id": "30ce3dcd-5100-8187-b61b-f2b8367d195b",
+    "title": "作为Solo AI增强开发者，发布真实产品后我学到了什么",
+    "slug": "panpanmao-series-03-lessons-learned-zh",
+    "summary": "第3篇（共3篇）：构建PanPanMao的真实教训。AI弥合领域知识鸿沟（但有个大前提）、产品vs工程、AI编程工作流，以及Solo AI增强开发者时代的到来。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "盘盘猫的故事",
+    "part": 3,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-818d-a3ac-e9e77bb52ccf",
+    "title": "为什么我在零领域知识的情况下做了一个AI算命应用",
+    "slug": "panpanmao-series-01-why-zero-domain-knowledge-zh",
+    "summary": "第1篇（共3篇）：一个大厂工程师的创业实验——用AI构建PanPanMao，一个覆盖9个产品线的中国玄学平台，29天1,134次commit，领域知识为零。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "盘盘猫的故事",
+    "part": 1,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81a7-9959-e207f23d451b",
+    "title": "29天，从5个独立应用到统一平台",
+    "slug": "panpanmao-series-02-technical-build-story-zh",
+    "summary": "第2篇（共3篇）：PanPanMao的技术构建全过程，分为4个阶段——monorepo整合、测试与品牌、商业化、里程碑冲刺。1,134次commit，85个端点，9个产品线。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development",
+      "LLM",
+      "Agents"
+    ],
+    "series": "盘盘猫的故事",
+    "part": 2,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81f4-9217-e362330d4290",
+    "title": "第29天：在完全不懂的领域做产品，我学到了什么",
+    "slug": "panpanmao-diary-07-reflections-zh",
+    "summary": "盘盘猫开发日记最终篇：29天，1,134次commit，9个产品线。关于AI增强开发、零知识领域创业、以及产品与工程分界线的思考。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
+    "part": 7,
+    "date": 1771401600000,
+    "fullWidth": false
+  },
+  {
     "id": "30be3dcd-5100-817c-b2fb-c2b9e176f9fb",
     "title": "Day 27: 98 Commits and Three New Products",
     "slug": "panpanmao-diary-06-feature-explosion",
@@ -177,6 +247,22 @@
       "Software Development"
     ],
     "series": "Building PanPanMao",
+    "part": 6,
+    "date": 1771142400000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81b1-b935-cdf6cbad18a1",
+    "title": "第27天：98次Commit，三个新产品上线",
+    "slug": "panpanmao-diary-06-feature-explosion-zh",
+    "summary": "盘盘猫开发日记第27天：最高产的一天。98次commit。三个新产品（起名、配对、流年运程）从零到上线。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
     "part": 6,
     "date": 1771142400000,
     "fullWidth": false
@@ -198,6 +284,22 @@
     "fullWidth": false
   },
   {
+    "id": "30ce3dcd-5100-8119-87c2-d6f45408dba1",
+    "title": "第20-23天：四天内交付M1、M2、M3三个里程碑",
+    "slug": "panpanmao-diary-05-milestone-rush-zh",
+    "summary": "盘盘猫开发日记第20-23天：166次commit，3个正式里程碑，17个PR。积分经济体系基础、每日运势Hub预生成内容架构、PostHog数据分析接入。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
+    "part": 5,
+    "date": 1770883200000,
+    "fullWidth": false
+  },
+  {
     "id": "30be3dcd-5100-8125-9e6d-d86a5fb183c8",
     "title": "Days 12-19: Credit Economy, New Features, and the Feature Explosion",
     "slug": "panpanmao-diary-04-monetization-and-features",
@@ -209,6 +311,22 @@
       "Software Development"
     ],
     "series": "Building PanPanMao",
+    "part": 4,
+    "date": 1770537600000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81b7-8fac-db86fa3ee1f8",
+    "title": "第12-19天：积分经济、新功能与功能爆发",
+    "slug": "panpanmao-diary-04-monetization-and-features-zh",
+    "summary": "盘盘猫开发日记第12-19天：邀请返利系统、基于MediaPipe的掌纹识别、落地页暗黑奢华风重设计，以及一个领悟——工程不再是瓶颈了。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
     "part": 4,
     "date": 1770537600000,
     "fullWidth": false
@@ -230,6 +348,22 @@
     "fullWidth": false
   },
   {
+    "id": "30ce3dcd-5100-81ea-8d03-d794ac036ca8",
+    "title": "第5-10天：从代码到产品（测试、落地页和猫咪主题）",
+    "slug": "panpanmao-diary-03-testing-and-branding-zh",
+    "summary": "盘盘猫开发日记第5-10天：Vitest测试冲刺、盘盘猫品牌的诞生、落地页设计、Stripe集成，以及以小鱼干为货币的积分经济。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
+    "part": 3,
+    "date": 1769760000000,
+    "fullWidth": false
+  },
+  {
     "id": "30be3dcd-5100-81e3-85bb-e4a7beac5052",
     "title": "Days 2-4: The Monorepo Migration Sprint (111 Commits in 3 Days)",
     "slug": "panpanmao-diary-02-migration-sprint",
@@ -246,6 +380,22 @@
     "fullWidth": false
   },
   {
+    "id": "30ce3dcd-5100-8120-9971-e551e4260cc9",
+    "title": "第2-4天：Monorepo迁移冲刺（3天111次Commit）",
+    "slug": "panpanmao-diary-02-migration-sprint-zh",
+    "summary": "盘盘猫开发日记第2-4天：CSS修复地狱、共享包提取、新增MBTI应用、微信浏览器检测，以及统一API层完成52条路由迁移。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
+    "part": 2,
+    "date": 1769241600000,
+    "fullWidth": false
+  },
+  {
     "id": "30be3dcd-5100-812b-a601-c4dbd3fd9416",
     "title": "Day 1: Why I'm Building a Fortune-Telling App (And I Know Nothing About Fortune-Telling)",
     "slug": "panpanmao-diary-01-genesis",
@@ -257,6 +407,22 @@
       "Software Development"
     ],
     "series": "Building PanPanMao",
+    "part": 1,
+    "date": 1768982400000,
+    "fullWidth": false
+  },
+  {
+    "id": "30ce3dcd-5100-81e0-8130-f77e79e346b0",
+    "title": "第一天：为什么我要做一个算命App（而我对算命一窍不通）",
+    "slug": "panpanmao-diary-01-genesis-zh",
+    "summary": "盘盘猫开发日记第一天：以零领域知识启动一个中国玄学AI平台。21次commit，monorepo搭建完成，以及一个大胆的假设——AI能否弥补一切知识盲区。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Software Development"
+    ],
+    "series": "盘盘猫开发日记",
     "part": 1,
     "date": 1768982400000,
     "fullWidth": false
