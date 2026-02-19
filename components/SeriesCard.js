@@ -5,10 +5,11 @@ import Link from 'next/link'
 const ZhBadge = ({ href, onClick }) => (
   <Link
     href={href}
+    title="阅读中文版"
     className="text-xs px-1.5 py-0.5 rounded-full border border-rose-300/60 dark:border-rose-700/50 text-rose-400 dark:text-rose-400/80 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors flex-shrink-0"
     onClick={onClick}
   >
-    中文版
+    中文版 →
   </Link>
 )
 
