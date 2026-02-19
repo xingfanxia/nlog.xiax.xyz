@@ -2,7 +2,7 @@ import FormattedDate from '@/components/FormattedDate'
 import { useConfig } from '@/lib/config'
 import Link from 'next/link'
 
-const SeriesCard = ({ name, posts, latestDate, earliestDate }) => {
+const SeriesCard = ({ name, posts, latestDate, earliestDate, zhSeriesName }) => {
   const BLOG = useConfig()
 
   return (
@@ -19,6 +19,15 @@ const SeriesCard = ({ name, posts, latestDate, earliestDate }) => {
           >
             {name}
           </Link>
+          {zhSeriesName && (
+            <Link
+              href={`/series/${encodeURIComponent(zhSeriesName)}`}
+              className="text-xs px-2 py-0.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors flex-shrink-0"
+              onClick={e => e.stopPropagation()}
+            >
+              中文
+            </Link>
+          )}
           <span className="text-xs text-gray-500 dark:text-gray-400 flex-shrink-0">
             {posts.length} parts
           </span>

@@ -22,19 +22,25 @@ const BlogPost = ({ post }) => {
           </p>
         </main>
       </Link>
-      {post.tags && post.tags.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-2">
-          {post.tags.map(tag => (
-            <Link
-              key={tag}
-              href={`/tag/${encodeURIComponent(tag)}`}
-              className="text-xs px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-gray-500 hover:text-gray-700 dark:hover:border-gray-400 dark:hover:text-gray-200 transition-colors"
-            >
-              {tag}
-            </Link>
-          ))}
-        </div>
-      )}
+      <div className="flex flex-wrap items-center gap-1 mt-2">
+        {post.hasZh && (
+          <Link
+            href={`${BLOG.path}/${post.zhSlug}`}
+            className="text-xs px-2 py-0.5 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors"
+          >
+            中文
+          </Link>
+        )}
+        {post.tags && post.tags.length > 0 && post.tags.map(tag => (
+          <Link
+            key={tag}
+            href={`/tag/${encodeURIComponent(tag)}`}
+            className="text-xs px-2 py-0.5 rounded-full border border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:border-gray-500 hover:text-gray-700 dark:hover:border-gray-400 dark:hover:text-gray-200 transition-colors"
+          >
+            {tag}
+          </Link>
+        ))}
+      </div>
     </article>
   );
 };

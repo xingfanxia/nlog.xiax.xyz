@@ -20,6 +20,7 @@ const Page = ({ itemsToShow, page, showNext }) => {
                 posts={item.posts}
                 latestDate={item.latestDate}
                 earliestDate={item.earliestDate}
+                zhSeriesName={item.zhSeriesName}
               />
               )
             : (
