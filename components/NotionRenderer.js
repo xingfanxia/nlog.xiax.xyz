@@ -16,8 +16,8 @@ const components = {
       const language = props.block?.properties?.language
         ? getTextContent(props.block.properties.language)
         : ''
-      switch (language) {
-        case 'Mermaid':
+      switch (language.toLowerCase()) {
+        case 'mermaid':
           return h(
             dynamic(() => {
               return import('@/components/notion-blocks/Mermaid').then(module => module.default)
