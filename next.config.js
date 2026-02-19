@@ -18,6 +18,15 @@ module.exports = {
   eslint: {
     ignoreDuringBuilds: true
   },
+  async redirects() {
+    return [
+      {
+        source: '/about',
+        destination: 'https://ax0x.ai/',
+        permanent: false
+      }
+    ]
+  },
   async headers() {
     return [
       {
