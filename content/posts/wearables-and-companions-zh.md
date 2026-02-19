@@ -3,7 +3,7 @@ title: "可穿戴设备：AI伴侣的神经系统"
 date: "2026-02-19"
 summary: "AI伴侣需要感知系统。可穿戴设备——伪装成时尚饰品的戒指、吊坠、手链——赋予AI感受你感受的能力，从被动回应转为主动关怀。"
 tags: ["AI", "Agents"]
-series: "AI知己愿景"
+series: "AI智能体随想"
 part: 2
 type: "Post"
 status: "Published"

@@ -3,7 +3,7 @@ title: "Agent经济：市场、数字分身与代理社交网络"
 date: "2026-02-19"
 summary: "Agent将替你生活——社交、谈判、筛选。Agent身份、支付、声誉和代理社交网络的基础设施是下一个平台级机会。"
 tags: ["AI", "Agents"]
-series: "AI知己愿景"
+series: "AI智能体随想"
 part: 3
 type: "Post"
 status: "Published"

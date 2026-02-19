@@ -3,7 +3,7 @@ title: "Wearables Are the Nervous System of AI Companions"
 date: "2026-02-19"
 summary: "AI companions need a sensory system. Wearables — rings, pendants, bracelets disguised as fashion — give AI the ability to feel what you're feeling and shift from reactive to proactive care."
 tags: ["AI", "Agents"]
-series: "AI Companion Vision"
+series: "Agentic AI Thoughts"
 part: 2
 type: "Post"
 status: "Published"

@@ -3,7 +3,7 @@ title: "愿景：构建真正理解你的AI"
 date: "2026-02-19"
 summary: "为什么现有AI伴侣都失败了，以及如何通过记忆编排、多Agent架构和对话式人格建模构建一个真正理解你的AI伴侣。"
 tags: ["AI", "Agents"]
-series: "AI知己愿景"
+series: "AI智能体随想"
 part: 1
 type: "Post"
 status: "Published"

@@ -46,7 +46,7 @@ set -a && source .env.local && set +a && node scripts/upload-to-notion.mjs <path
 - `getAllSeriesFromPosts()` groups posts by series, sorts by part
 - `groupPostsWithSeries()` builds mixed timeline (standalone posts + collapsible series cards)
 - Series detail pages at `/series/[name]`, in-post nav via `SeriesNav` component
-- Current series: "Building PanPanMao", "The PanPanMao Story", "AI Companion Vision", "AI知己愿景"
+- Current series: "Building PanPanMao", "The PanPanMao Story", "Agentic AI Thoughts", "AI智能体随想"
 
 ## Language Toggle
 

@@ -26,7 +26,7 @@ const BlogPost = ({ post }) => {
         {post.hasZh && (
           <Link
             href={`${BLOG.path}/${post.zhSlug}`}
-            className="text-xs px-2 py-0.5 rounded-full border border-sky-300 dark:border-sky-700 text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors"
+            className="text-xs px-2 py-0.5 rounded-full border border-rose-300/60 dark:border-rose-700/50 text-rose-400 dark:text-rose-400/80 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors"
           >
             中文
           </Link>

@@ -5,7 +5,7 @@ import Link from 'next/link'
 const ZhBadge = ({ href, onClick }) => (
   <Link
     href={href}
-    className="text-xs px-1.5 py-0.5 rounded-full border border-sky-300 dark:border-sky-700 text-sky-600 dark:text-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/30 transition-colors flex-shrink-0"
+    className="text-xs px-1.5 py-0.5 rounded-full border border-rose-300/60 dark:border-rose-700/50 text-rose-400 dark:text-rose-400/80 hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-colors flex-shrink-0"
     onClick={onClick}
   >
     中文

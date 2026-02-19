@@ -13,9 +13,9 @@ Previously: Airbnb (fraud detection ML), Apple (Siri on-device ML), AWS (Athena 
 
 ### Projects
 
-- **[PanPanMao](https://panpanmao.ai)** — AI-powered Chinese metaphysics platform. 9 product verticals, built solo in 29 days with AI coding agents.
+- [**PanPanMao**](https://panpanmao.ai/) — AI-powered Chinese metaphysics platform. 9 product verticals, built solo in 29 days with AI coding agents.
 
-- **[OpenClaw](https://github.com/xingfanxia)** — Open source project.
+- [**OpenClaw**](https://github.com/xingfanxia) — Open source project.
 
 ### This Blog
 
@@ -24,5 +24,7 @@ This blog uses Notion as the database & backend — hence `nlog`. ISR near real-
 ### Find Me
 
 - [ax0x.ai](https://www.ax0x.ai/) — Personal site
+
 - [GitHub](https://github.com/xingfanxia)
+
 - [LinkedIn](https://linkedin.com/in/xingfanxia/)

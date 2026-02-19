@@ -3,7 +3,7 @@ title: "The Agent Economy: Marketplaces, Digital Twins, and Proxy Social Network
 date: "2026-02-19"
 summary: "Agents will live your life for you — socializing, negotiating, filtering. The infrastructure for agent identity, payment, reputation, and proxy social networks is the next platform play."
 tags: ["AI", "Agents"]
-series: "AI Companion Vision"
+series: "Agentic AI Thoughts"
 part: 3
 type: "Post"
 status: "Published"

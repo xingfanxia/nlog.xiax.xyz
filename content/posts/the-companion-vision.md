@@ -3,7 +3,7 @@ title: "The Companion Vision: Building AI That Truly Understands You"
 date: "2026-02-19"
 summary: "Why AI companions fail today and how to build one that truly understands you through memory orchestration, multi-agent architecture, and conversational personality modeling."
 tags: ["AI", "Agents"]
-series: "AI Companion Vision"
+series: "Agentic AI Thoughts"
 part: 1
 type: "Post"
 status: "Published"
