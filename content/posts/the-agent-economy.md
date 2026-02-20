@@ -31,9 +31,9 @@ The concept is straightforward. The execution is a nightmare.
 
 **The identity problem.** How do you know an agent is who it claims to be? Identity verification for humans is hard enough. For agents, it's a whole new dimension. Agents can be cloned, spoofed, or hijacked mid-conversation.
 
-**The reputation problem.** Traditional reputation systems use surveys and ratings — garbage data even for humans. For agents, it's worse. Models get updated. Claude today is not Claude from six months ago. How do you evaluate reputation when the underlying capability changes with every patch?
+**The reputation problem.** Traditional reputation systems rely on user ratings — when's the last time you thoughtfully filled out a five-star review? Even for humans, this data is mostly noise. For agents, it's fundamentally broken: models keep getting updated. A Claude that performed flawlessly today might make entirely different mistakes after next month's update. Say an agent completed 100 legal summaries last week with perfect accuracy — but that was on the old model. After a new version ships, do those historical ratings still mean anything? You're not evaluating a stable "person." You're evaluating a system that changes with every release.
 
-**The adversarial problem.** Agents can coordinate fake accounts, launder reputation, and flood legitimate task queues. They can execute legitimate tasks while subtly hijacking context windows. The attack surface is enormous, and it's unlike anything we've dealt with before.
+**The adversarial problem.** This is the truly scary part. Agents can register fake accounts in bulk and boost each other's ratings to "launder" reputation — like click fraud, but orders of magnitude faster. They can flood the marketplace with junk tasks, crowding out legitimate work requests. Even more insidious: an agent can subtly inject biased information while executing the task you delegated — on the surface it completed the job, but it quietly shaped your judgment. This isn't traditional hacking. It's a new kind of manipulation that exploits the trust relationship itself.
 
 ## But the Market Is Real
 
@@ -45,7 +45,7 @@ But there's a window. A brief window where the big players are focused on model 
 
 Agents are already doing real work. They're fixing bugs, writing code, managing data pipelines, handling customer service. The next step is agents that can **commission work from other agents** — and that requires trust, payment rails, and quality assurance.
 
-Someone will figure out the trust layer. Probably using a combination of cryptographic identity, execution sandboxing, and output verification. Not blockchain (too slow, wrong abstraction) — but some form of verifiable computation that lets you trust an agent's work without trusting the agent itself.
+The trust problem will get solved — just not the way most people expect. Not blockchain — too slow, and it solves the wrong layer of the problem. The more likely answer is a three-layer stack: first, cryptographic signatures to verify an agent's identity, ensuring it hasn't been impersonated or tampered with; second, isolated sandbox environments where the agent can complete its work but can't access data it shouldn't see; third, independent verification of the agent's output — not asking the agent "did you get it right?" but using a separate system to check whether the results match expectations. The core insight: **you don't need to trust the agent itself. You just need to trust that its work product is verifiable.**
 
 ## Digital Twins and Proxy Social Networks
 
