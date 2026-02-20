@@ -81,7 +81,9 @@ Think about what a close friend knows about you beyond your words and your body 
 
 An AI companion that only exists in chat knows none of this. An AI companion connected to wearables knows your heart rate and sleep. But an AI companion that can **perceive your physical space** — that's something qualitatively different.
 
-**Spatial awareness** — a camera or sensor that occasionally scans your environment. Not constant surveillance, but periodic snapshots. Is your space getting cluttered? Are there takeout containers piling up? Did you set up that home gym equipment or is it still in the box? These are signals of your mental state that no biometric can capture.
+**Spatial awareness** — a camera or sensor that occasionally scans your environment. This is where privacy gets real. The key constraint: the user must explicitly opt in and control when snapshots happen — a manual trigger, not passive collection. The raw image never leaves the device; on-device vision models extract semantic signals ("cluttered desk," "takeout containers," "dark room") and only those labels reach the companion. No photos stored, no images transmitted. This is the same privacy architecture as the biometric edge processing — raw data stays local, only meaning goes to the cloud.
+
+Is your space getting cluttered? Are there takeout containers piling up? Did you set up that home gym equipment or is it still in the box? These are signals of your mental state that no biometric can capture.
 
 **Object context** — what's on your desk, what you're eating, what you're wearing. If your companion notices you've been ordering delivery every night for two weeks, that's a data point. If it sees you dressed up on a Tuesday, that's a different kind of signal.
 
@@ -95,7 +97,7 @@ The wearable sensors are the nervous system. But the spatial awareness — that'
 
 Apple has the Watch. Google has Fitbit. Samsung has Galaxy Ring. They all have the sensors. None of them will build this.
 
-**Regulatory fear.** The moment you combine biometric data with an AI that gives emotional advice, you're in regulatory gray zone across every jurisdiction. Big companies won't touch it.
+**Regulatory fear.** Big tech already collects biometric data — Apple Watch tracks your heart rate, Samsung Galaxy Ring monitors your sleep. That's not the problem. The regulatory gray zone starts when you combine that data with an AI that interprets your emotional state and gives mental health guidance. That's where it crosses from "health tracking" into "unregulated therapy," and no public company's legal team will sign off on that.
 
 **Liability avoidance.** If an AI companion notices signs of depression through wearable data and says the wrong thing, the lawsuit risk is enormous for a public company. An independent builder can move faster and take smarter risks.
 
@@ -161,4 +163,4 @@ But a companion that only lives in a chat window is half the product. The other 
 
 Wearables are that layer. Not smartwatches with screens. Not fitness trackers with dashboards. Beautiful, unobtrusive accessories that give your AI companion the one thing it's missing: **the ability to feel what you're feeling**.
 
-Build the jewelry. Build the companion. Connect them. That's the full stack of human emotional infrastructure.
+Build the jewelry. Build the companion. Connect them. The question is whether we build the sensing layer before the companion AI outgrows it.
