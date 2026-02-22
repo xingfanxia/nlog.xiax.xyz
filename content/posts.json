@@ -1,22 +1,6 @@
 [
   {
-    "id": "30fe3dcd-5100-8120-9536-f18ab552feda",
-    "title": "AI的最后一公里",
-    "slug": "the-last-mile-of-ai-zh",
-    "summary": "一个周末，一个非工程师朋友，一台电脑——教他用AI Agent的过程让我看到了Agent革命真正的瓶颈：不是技术，不是成本，而是认知。",
-    "status": "Published",
-    "type": "Post",
-    "tags": [
-      "AI",
-      "Agents"
-    ],
-    "series": "AI智能体随想",
-    "part": 5,
-    "date": 1771747200000,
-    "fullWidth": false
-  },
-  {
-    "id": "30fe3dcd-5100-814e-8026-fac53ee72498",
+    "id": "30fe3dcd-5100-815b-8fdf-d76cb4ed4157",
     "title": "The Last Mile of AI",
     "slug": "the-last-mile-of-ai",
     "summary": "A weekend teaching a non-engineer friend to use AI agents revealed the real bottleneck of the agent revolution: not technology, not cost, but cognition.",
@@ -27,6 +11,22 @@
       "Agents"
     ],
     "series": "Agentic AI Thoughts",
+    "part": 5,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-8174-a03a-db23182be35d",
+    "title": "AI的最后一公里",
+    "slug": "the-last-mile-of-ai-zh",
+    "summary": "一个周末，一个非工程师朋友，一台电脑——教他用AI Agent的过程让我看到了Agent革命真正的瓶颈：不是技术，不是成本，而是认知。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
     "part": 5,
     "date": 1771747200000,
     "fullWidth": false
