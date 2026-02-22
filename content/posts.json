@@ -1,6 +1,22 @@
 [
   {
-    "id": "30fe3dcd-5100-815b-8fdf-d76cb4ed4157",
+    "id": "30fe3dcd-5100-811b-afea-fa030e3e0d11",
+    "title": "你才是 Manager",
+    "slug": "you-are-the-manager-zh",
+    "summary": "Agent 时代真正重要的技能不是编码——而是管理 AI。从下好指令到校准信任，这才是和 Agent 协作的真实样貌。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
+    "part": 6,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-8182-9f32-ec5a1fbca166",
     "title": "The Last Mile of AI",
     "slug": "the-last-mile-of-ai",
     "summary": "A weekend teaching a non-engineer friend to use AI agents revealed the real bottleneck of the agent revolution: not technology, not cost, but cognition.",
@@ -16,7 +32,7 @@
     "fullWidth": false
   },
   {
-    "id": "30fe3dcd-5100-8174-a03a-db23182be35d",
+    "id": "30fe3dcd-5100-819e-98a3-c8a2618348c4",
     "title": "AI的最后一公里",
     "slug": "the-last-mile-of-ai-zh",
     "summary": "一个周末，一个非工程师朋友，一台电脑——教他用AI Agent的过程让我看到了Agent革命真正的瓶颈：不是技术，不是成本，而是认知。",
@@ -28,6 +44,86 @@
     ],
     "series": "AI智能体随想",
     "part": 5,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-81b7-8669-c990d88f30db",
+    "title": "印刷术时刻",
+    "slug": "the-printing-press-moment-zh",
+    "summary": "编码只是滩头阵地。范式转移已经发生了——但窗口不会一直开着。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
+    "part": 8,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-81b9-a6fa-f03278651e65",
+    "title": "You Are the Manager",
+    "slug": "you-are-the-manager",
+    "summary": "The skill that matters in the agent era isn't coding — it's managing AI. From giving clear instructions to calibrating trust, here's what working with agents actually looks like.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "Agentic AI Thoughts",
+    "part": 6,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-81bc-bcdc-f3f6a18b7836",
+    "title": "Why Claude Code",
+    "slug": "why-claude-code",
+    "summary": "SemiAnalysis calls Claude Code the inflection point. As someone who works inside Claude Code every day, I want to explain why Anthropic built it, and what it actually changed.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "Agentic AI Thoughts",
+    "part": 7,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-81d6-881b-fad80cce991a",
+    "title": "为什么是 Claude Code",
+    "slug": "why-claude-code-zh",
+    "summary": "SemiAnalysis 的报告说 Claude Code 是 AI Agent 的拐点。作为一个每天在 Claude Code 里工作的人，我想说说为什么是 Anthropic 做出了它，以及它到底改变了什么。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
+    "part": 7,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-81fb-a0c2-d5b66255e176",
+    "title": "The Printing Press Moment",
+    "slug": "the-printing-press-moment",
+    "summary": "Coding is the beachhead, not the destination. The paradigm shift has already happened — but the window won't stay open forever.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "Agentic AI Thoughts",
+    "part": 8,
     "date": 1771747200000,
     "fullWidth": false
   },

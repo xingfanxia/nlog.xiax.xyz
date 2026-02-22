@@ -25,7 +25,7 @@ METR 的研究数据显示，AI Agent 的自主任务处理时长每4到7个月�
 
 Boris Cherny 预测这将重新定义职业本身："我觉得'软件工程师'这个头衔会慢慢消失。可能变成 builder，可能变成产品经理。"在 Anthropic 内部这已经是现实——PM 写代码，设计师写代码，工程经理写代码，财务团队也写代码。区分你的不再是"会不会写代码"，而是对系统、用户和问题的理解。
 
-Anthropic 显然也看到了这一点。Cowork 的推出——面向通用计算的 Claude Code——标志着它正式将 Agent 从程序员群体拓展到所有信息工作者。在[第四篇](/when-software-becomes-disposable-zh)里，陈宇森说 Claude Code 是最强的通用 Agent。Cowork 是这个判断的直接延伸：通用 Agent 不该只服务于程序员。
+Anthropic 显然也看到了这一点。Cowork 的推出——面向通用计算的 Claude Code——标志着它正式将 Agent 从程序员群体拓展到所有信息工作者。在[第四篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)里，陈宇森说 Claude Code 是最强的通用 Agent。Cowork 是这个判断的直接延伸：通用 Agent 不该只服务于程序员。
 
 而这不是理论预判——Anthropic 内部已经是这样了。数据科学家用 Claude Code 写 SQL 和做数据分析，销售团队把它接到 Salesforce 上处理业务，Plugins 功能则是一群 Agent 自动领取任务分工开发，周末跑了几天就完成了，几乎没有人工介入。
 
@@ -47,7 +47,7 @@ SaaS 行业的三道核心护城河正在同时瓦解。
 
 SaaS 的本质是什么？是把信息工作流程固化为代码，然后按月收费。但如果 Agent 能直接完成信息工作——不需要固化的代码流程——那 SaaS 75% 的毛利率就变成了巨大的套利空间。
 
-这正好和[第四篇](/when-software-becomes-disposable-zh)的"日抛型软件"判断形成呼应。当软件可以按需生成时，那些把工作流固化为产品的公司，护城河就不再是护城河了。
+这正好和[第四篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)的"日抛型软件"判断形成呼应。当软件可以按需生成时，那些把工作流固化为产品的公司，护城河就不再是护城河了。
 
 微软是这场变革中最典型的案例。它一边通过 Azure 为 Anthropic 和 OpenAI 提供算力，另一边看着这些客户用 AI 产品颠覆自己的 Office 365 和 GitHub。微软的 Copilot 系列比 Claude Code 早了整整一年，却几乎没有取得实质性的市场进展。但微软的困境不是微软一家的困境——它是所有按席位收费的软件公司的困境。
 
@@ -59,7 +59,7 @@ SaaS 的本质是什么？是把信息工作流程固化为代码，然后按月
 
 后来我转向了 Claude Code。和 Cursor 不同——Cursor 本质上仍然是 IDE，它让你看代码、编辑代码，AI 只是辅助。Claude Code 提供了一个完全不同的范式：你不再盯着代码，而是**专注于描述意图**。你告诉它你想要什么，它去规划、去执行、去跨文件协作。你的角色从"写代码的人"变成"管理 Agent 的人"。
 
-2025年底，我先做了一个六壬占卜的 app，然后是八字、MBTI、解梦——一开始都是玩具性质的实验。后来决定认真做一个产品，于是买了 panpanmao 域名，重写底层架构，把所有功能整合成一个 unified all-in-one app——这就是[盘盘猫](https://www.panpanmao.ai/)的起点。到2026年初，变化加速了。我在 GCP 上搭了 OpenClaw，把 Agent 接入飞书，非技术团队成员开始直接和 Agent 协作（[第五篇](/the-last-mile-of-ai-zh)写了这个）。Anthropic 推出 Cowork。SemiAnalysis 发报告。顶尖开发者集体表态。
+2025年底，我先做了一个六壬占卜的 app，然后是八字、MBTI、解梦——一开始都是玩具性质的实验。后来决定认真做一个产品，于是买了 panpanmao 域名，重写底层架构，把所有功能整合成一个 unified all-in-one app——这就是[盘盘猫](https://www.panpanmao.ai/)的起点。到2026年初，变化加速了。我在 GCP 上搭了 OpenClaw，把 Agent 接入飞书，非技术团队成员开始直接和 Agent 协作（[第五篇](https://blog.ax0x.ai/the-last-mile-of-ai-zh)写了这个）。Anthropic 推出 Cowork。SemiAnalysis 发报告。顶尖开发者集体表态。
 
 这个转折不是某一天突然发生的。它像水温升高——你每天都泡在里面，感觉不到变化。但如果2023年的我看到2026年的我，他不会相信我的日常工作就是思考和跟 Agent 对话——而不是写代码。
 
@@ -91,17 +91,17 @@ Boris 在访谈中用了一个历史类比，让我觉得特别贴切。古登�
 
 ## 八篇文章，一条主线
 
-[第一篇](/the-companion-vision-zh)，AI Companion——一个真正理解你的 AI 伴侣。那时候这还是"愿景"。现在 Claude Code 已经是最接近这个愿景的产品：理解你的工作环境，记住你的偏好，能协作而不仅仅是执行指令。
+[第一篇](https://blog.ax0x.ai/the-companion-vision-zh)，AI Companion——一个真正理解你的 AI 伴侣。那时候这还是"愿景"。现在 Claude Code 已经是最接近这个愿景的产品：理解你的工作环境，记住你的偏好，能协作而不仅仅是执行指令。
 
-[第二篇](/wearables-and-companions-zh)，"民主化高管生活方式"——每个人都拥有 CEO 级别的资源。现在 $20/月已经让这成为现实。
+[第二篇](https://blog.ax0x.ai/wearables-and-companions-zh)，"民主化高管生活方式"——每个人都拥有 CEO 级别的资源。现在 $20/月已经让这成为现实。
 
-[第四篇](/when-software-becomes-disposable-zh)，"日抛型软件"——为一个人定制的一次性应用。Claude Code 已经在日常性地做这件事。
+[第四篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)，"日抛型软件"——为一个人定制的一次性应用。Claude Code 已经在日常性地做这件事。
 
-[第五篇](/the-last-mile-of-ai-zh)，"最后一公里"——99.99% 的人不知道 AI 能做什么。这仍然是最大的瓶颈。
+[第五篇](https://blog.ax0x.ai/the-last-mile-of-ai-zh)，"最后一公里"——99.99% 的人不知道 AI 能做什么。这仍然是最大的瓶颈。
 
-[第六篇](/you-are-the-manager-zh)，"你才是 Manager"——关键技能不再是写代码，而是管理 Agent。竞争力已经转移了。
+[第六篇](https://blog.ax0x.ai/you-are-the-manager-zh)，"你才是 Manager"——关键技能不再是写代码，而是管理 Agent。竞争力已经转移了。
 
-[第七篇](/why-claude-code-zh)，"为什么是 Claude Code"——缰绳比模型更重要。编排胜过生成。
+[第七篇](https://blog.ax0x.ai/why-claude-code-zh)，"为什么是 Claude Code"——缰绳比模型更重要。编排胜过生成。
 
 范式转移已经发生了。不是"即将发生"，不是"可能发生"——是已经发生了。4% 的 GitHub 提交来自 Claude Code。顶尖开发者不再手写代码。15万亿美元的信息工作市场正在被重新定价。
 
@@ -114,4 +114,5 @@ Boris 在访谈中用了一个历史类比，让我觉得特别贴切。古登�
 **有空的话，推荐看看：**
 
 - [SemiAnalysis: Claude Code is the Inflection Point](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point)
+
 - [Inside Claude Code With Its Creator Boris Cherny (YC / Light Cone)](https://www.youtube.com/watch?v=PQU9o_5rHC4)

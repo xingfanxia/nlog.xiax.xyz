@@ -23,7 +23,7 @@ That weekend showed me three things, each more visceral than anything I'd theori
 
 ## The Last Mile
 
-In [Part 4](/when-software-becomes-disposable), I wrote about the agent marketplace's "conversational entry point" — users shouldn't browse a shelf of agents, they should just state their need and let the platform match. Sounds elegant.
+In [Part 4](https://blog.ax0x.ai/when-software-becomes-disposable), I wrote about the agent marketplace's "conversational entry point" — users shouldn't browse a shelf of agents, they should just state their need and let the platform match. Sounds elegant.
 
 But reality: before my friend could "converse," he had to cross a massive threshold.
 
@@ -71,7 +71,7 @@ But after the laughter subsided, he went quiet. Because he realized something: *
 
 Then when Claude Code built him a custom tool tailored entirely to his business scenario — not some generic software configuration, but an application that existed solely for his needs — he went quiet for a long time again.
 
-This validates the "disposable software" thesis from [Part 4](/when-software-becomes-disposable): building software for a single person is already technically feasible. **But 99.99% of people don't even know they can ask for it.**
+This validates the "disposable software" thesis from [Part 4](https://blog.ax0x.ai/when-software-becomes-disposable): building software for a single person is already technically feasible. **But 99.99% of people don't even know they can ask for it.**
 
 They've never seen agent-level capabilities. They've used free-tier, stripped-down, rate-limited models. Their entire impression of AI is a chat box that occasionally produces a useful answer.
 
@@ -91,7 +91,7 @@ So what does latent demand look like in practice? These are real use cases Boris
 
 **Data analysis and research.** Not "answer this data question" — but "here's my database, explore the data, find interesting patterns, write it up as a report." The agent decides on its own what queries to run and how to present the results.
 
-**Custom tools for your specific situation.** [Part 4](/when-software-becomes-disposable)'s "disposable software" — describe your need and let the agent build a tool that serves only you.
+**Custom tools for your specific situation.** [Part 4](https://blog.ax0x.ai/when-software-becomes-disposable)'s "disposable software" — describe your need and let the agent build a tool that serves only you.
 
 **Learn anything you want to learn.** Not search-engine-style "what is X" — but "I want to understand X, my background is Y, explain it so I can understand, give me a practical example, walk me through it step by step." A private tutor with infinite patience.
 
@@ -99,4 +99,4 @@ The demand is everywhere. The capability is here. But between "seeing what's pos
 
 It's not about learning features or memorizing commands. It's about learning to manage.
 
-That's [Part 6](/you-are-the-manager).
+That's [Part 6](https://blog.ax0x.ai/you-are-the-manager).

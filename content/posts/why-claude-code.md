@@ -41,7 +41,7 @@ This is the core of the paradigm shift. Not that the model got smarter — but t
 
 In the ChatGPT era, 90% of the model's capability was wasted. You ask a question, it gives an answer, then waits for your next question. Between each turn, all context, judgment, and intermediate state gets discarded. What Claude Code's harness does is: keep the model working continuously, maintain state across multiple steps, self-adjust when hitting obstacles, and keep converging on the goal. The model's intelligence didn't change, but utilization went from 10% to 90%.
 
-Most people — the 99.99% I discussed in [Part 5](/the-last-mile-of-ai) — still think of AI as "a slightly smarter search engine." But Claude Code has already proven that AI can be an executor. You give it an objective, it gives you an outcome.
+Most people — the 99.99% I discussed in [Part 5](https://blog.ax0x.ai/the-last-mile-of-ai) — still think of AI as "a slightly smarter search engine." But Claude Code has already proven that AI can be an executor. You give it an objective, it gives you an outcome.
 
 ## Why Anthropic
 
@@ -99,11 +99,12 @@ Internally at Anthropic, since Claude Code was introduced, **each engineer's pro
 
 The consensus is clear. The practitioners who defined modern programming are saying the same thing, each in their own way: the era of writing code by hand is ending.
 
-But if you think this is only about programming, you're underestimating what's happening. Coding is the first beachhead — not the destination. [Part 8](/the-printing-press-moment) looks at what happens when the paradigm shift spreads beyond code.
+But if you think this is only about programming, you're underestimating what's happening. Coding is the first beachhead — not the destination. [Part 8](https://blog.ax0x.ai/the-printing-press-moment) looks at what happens when the paradigm shift spreads beyond code.
 
 ---
 
 **References:**
 
 - [SemiAnalysis: Claude Code is the Inflection Point](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point)
+
 - [Inside Claude Code With Its Creator Boris Cherny (YC / Light Cone)](https://www.youtube.com/watch?v=PQU9o_5rHC4)

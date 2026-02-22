@@ -41,7 +41,7 @@ Boris Cherny——Claude Code 的创造者——在最近的几次访谈里讲�
 
 ChatGPT 时代，模型的能力被浪费了 90%。你问一个问题，它给一个回答，然后等你的下一个问题。每轮对话之间，所有的上下文、判断、中间状态都被丢掉了。Claude Code 的缰绳做的事情是：让模型持续工作，在多个步骤之间保持状态，遇到障碍自主调整，不断逼近目标。模型的智能没变，但利用率从 10% 拉到了 90%。
 
-大多数人——[第五篇](/the-last-mile-of-ai-zh)里我说的 99.99%——还停留在"AI 是一个更聪明的搜索引擎"的认知里。但 Claude Code 已经证明，AI 可以是一个执行者。你给它目标，它给你结果。
+大多数人——[第五篇](https://blog.ax0x.ai/the-last-mile-of-ai-zh)里我说的 99.99%——还停留在"AI 是一个更聪明的搜索引擎"的认知里。但 Claude Code 已经证明，AI 可以是一个执行者。你给它目标，它给你结果。
 
 ## 为什么是 Anthropic
 
@@ -99,11 +99,12 @@ Linux 之父 Linus Torvalds 也开始用 Claude Code。
 
 共识已经很清晰。定义了现代编程的实践者们在用各自的方式说同一件事：手写代码的时代正在结束。
 
-但如果你觉得这只是关于编程的故事，你低估了正在发生的事。编码只是滩头阵地——不是终点。[第八篇](/the-printing-press-moment-zh)会看看，当范式转移扩展到代码之外，会发生什么。
+但如果你觉得这只是关于编程的故事，你低估了正在发生的事。编码只是滩头阵地——不是终点。[第八篇](https://blog.ax0x.ai/the-printing-press-moment-zh)会看看，当范式转移扩展到代码之外，会发生什么。
 
 ---
 
 **有空的话，推荐看看：**
 
 - [SemiAnalysis: Claude Code is the Inflection Point](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point)
+
 - [Inside Claude Code With Its Creator Boris Cherny (YC / Light Cone)](https://www.youtube.com/watch?v=PQU9o_5rHC4)

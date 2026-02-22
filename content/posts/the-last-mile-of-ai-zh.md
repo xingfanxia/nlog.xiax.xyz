@@ -23,7 +23,7 @@ status: "Published"
 
 ## 最后一公里
 
-[上一篇](/when-software-becomes-disposable-zh)我写到 Agent Marketplace 的"对话式入口"——用户不该在货架上挑选 Agent，而是直接说出需求让平台匹配。听起来很美。
+[上一篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)我写到 Agent Marketplace 的"对话式入口"——用户不该在货架上挑选 Agent，而是直接说出需求让平台匹配。听起来很美。
 
 但现实是：在我朋友能"对话"之前，他得先跨过一道巨大的门槛。
 
@@ -71,7 +71,7 @@ Anthropic 也看到了这个问题。Boris Cherny——Claude Code 的创造者�
 
 然后当 Claude Code 帮他搭建了一个完全针对他业务场景的定制工具时——不是什么通用软件的配置，而是一个只为他的需求而存在的应用——他又安静了很久。
 
-这验证了我在[上一篇](/when-software-becomes-disposable-zh)里写的"日抛型软件"判断：为一个人定制软件，在技术上已经完全可行。**但 99.99% 的人根本不知道可以提这个需求。**
+这验证了我在[上一篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)里写的"日抛型软件"判断：为一个人定制软件，在技术上已经完全可行。**但 99.99% 的人根本不知道可以提这个需求。**
 
 他们从来没见过 Agent 级别的能力。他们用的是免费版的、被阉割的、被限速的模型。他们对 AI 的全部印象就是一个偶尔能给出有用答案的聊天框。
 
@@ -91,7 +91,7 @@ Boris Cherny 有一个产品术语来形容这件事：**潜在需求**（latent
 
 **数据分析和研究。** 不是"帮我回答这个数据问题"——而是"这是我的数据库，帮我探索数据，找有意思的规律，写成报告"。Agent 会自己决定跑什么查询、怎么呈现。
 
-**为你的具体场景定制工具。** [第四篇](/when-software-becomes-disposable-zh)讲的"日抛型软件"——不需要在市面上找一个"差不多能用"的通用产品，直接描述你的需求，让 Agent 给你做一个只为你服务的工具。
+**为你的具体场景定制工具。** [第四篇](https://blog.ax0x.ai/when-software-becomes-disposable-zh)讲的"日抛型软件"——不需要在市面上找一个"差不多能用"的通用产品，直接描述你的需求，让 Agent 给你做一个只为你服务的工具。
 
 **学任何你想学的东西。** 不是搜索引擎式的"X 是什么"——而是"我想理解 X，我的背景是 Y，用我能理解的方式解释，给我一个实际的例子，然后陪我一步步深入"。Agent 能根据你的知识水平调整解释深度，像一个有无限耐心的私人导师。
 
@@ -99,4 +99,4 @@ Boris Cherny 有一个产品术语来形容这件事：**潜在需求**（latent
 
 它不是关于学习功能或记忆命令。它是关于学习管理。
 
-这就是[第六篇](/you-are-the-manager-zh)的内容。
+这就是[第六篇](https://blog.ax0x.ai/you-are-the-manager-zh)的内容。

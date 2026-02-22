@@ -25,7 +25,7 @@ METR's research shows that AI agent autonomous task horizons are doubling every 
 
 Boris Cherny predicts this will reshape job titles themselves: "I think we're going to start to see the title software engineer go away. Maybe builder, maybe product manager." At Anthropic, this is already reality — PMs code, designers code, the engineering manager codes, the finance team codes. Everyone ships software. The distinguishing skill isn't writing code; it's understanding systems, users, and problems.
 
-Anthropic clearly sees this too. The launch of Cowork — Claude Code for general computing — signals its formal expansion from serving programmers to serving all information workers. In [Part 4](/when-software-becomes-disposable), Chen Yusen called Claude Code the strongest general agent. Cowork is the direct extension of that judgment: a general agent shouldn't serve only programmers.
+Anthropic clearly sees this too. The launch of Cowork — Claude Code for general computing — signals its formal expansion from serving programmers to serving all information workers. In [Part 4](https://blog.ax0x.ai/when-software-becomes-disposable), Chen Yusen called Claude Code the strongest general agent. Cowork is the direct extension of that judgment: a general agent shouldn't serve only programmers.
 
 This isn't theoretical — it's already happening inside Anthropic. Data scientists use Claude Code for SQL and analysis, the sales team connects it to Salesforce, and the Plugins feature was built entirely by an agent swarm that self-organized over a weekend with almost no human intervention.
 
@@ -47,7 +47,7 @@ SaaS's three core moats are eroding simultaneously.
 
 What is SaaS, fundamentally? It's information workflows crystallized into code, sold on a monthly subscription. But if agents can perform information work directly — without crystallized code — then SaaS's 75% gross margins become a massive arbitrage opportunity.
 
-This resonates directly with [Part 4](/when-software-becomes-disposable)'s "disposable software" thesis. When software can be generated on demand, companies that crystallize workflows into products find their moats are no longer moats.
+This resonates directly with [Part 4](https://blog.ax0x.ai/when-software-becomes-disposable)'s "disposable software" thesis. When software can be generated on demand, companies that crystallize workflows into products find their moats are no longer moats.
 
 Microsoft is the most prominent case study. It provides compute to Anthropic and OpenAI through Azure on one side, while watching these customers disrupt its Office 365 and GitHub businesses on the other. Microsoft's Copilot products launched a full year before Claude Code, yet have barely made a dent. But Microsoft's predicament isn't Microsoft's alone — it's the predicament of every seat-based software company.
 
@@ -59,7 +59,7 @@ In 2023, I started using Cursor shortly after it launched. Back then it didn't h
 
 Then I switched to Claude Code. The difference is fundamental — Cursor is still an IDE at its core. It puts you in front of code, lets you see it, edit it, with AI assisting alongside. Claude Code offers a completely different paradigm: you stop staring at code and **focus on describing intent**. You tell it what you want, and it plans, executes, and collaborates across files. Your role shifts from "the person who writes code" to "the person who manages the agent."
 
-At the end of 2025, I built a liuren divination app first, then bazi, MBTI, dream interpretation — all toy-level experiments at first. Then I decided to get serious about building a real product. I bought the panpanmao domain, rewrote the underlying architecture, and unified everything into a single all-in-one app — that's how [PanPanMao](https://www.panpanmao.ai/) began. By early 2026, the pace accelerated. I set up OpenClaw on GCP, connected the agent to Feishu, and non-technical team members started collaborating directly with the agent ([Part 5](/the-last-mile-of-ai) covered this). Anthropic launched Cowork. SemiAnalysis published their report. Top developers spoke up collectively.
+At the end of 2025, I built a liuren divination app first, then bazi, MBTI, dream interpretation — all toy-level experiments at first. Then I decided to get serious about building a real product. I bought the panpanmao domain, rewrote the underlying architecture, and unified everything into a single all-in-one app — that's how [PanPanMao](https://www.panpanmao.ai/) began. By early 2026, the pace accelerated. I set up OpenClaw on GCP, connected the agent to Feishu, and non-technical team members started collaborating directly with the agent ([Part 5](https://blog.ax0x.ai/the-last-mile-of-ai) covered this). Anthropic launched Cowork. SemiAnalysis published their report. Top developers spoke up collectively.
 
 This inflection point didn't happen on a single day. It was like water temperature rising — you're soaking in it every day, barely noticing the change. But if 2023-me saw 2026-me, he wouldn't believe that my daily work is just thinking and talking to agents — not writing code.
 
@@ -91,17 +91,17 @@ We're standing at the "printing press moment" for code. Writing code is copying.
 
 ## Eight Parts, One Throughline
 
-[Part 1](/the-companion-vision), the AI Companion — a companion that truly understands you. Back then it was a "vision." Now Claude Code is the closest thing to it: it understands your working environment, remembers your preferences, collaborates rather than merely executing instructions.
+[Part 1](https://blog.ax0x.ai/the-companion-vision), the AI Companion — a companion that truly understands you. Back then it was a "vision." Now Claude Code is the closest thing to it: it understands your working environment, remembers your preferences, collaborates rather than merely executing instructions.
 
-[Part 2](/wearables-and-companions), "democratizing the executive lifestyle" — everyone deserves CEO-level resources. Now $20/month makes that real.
+[Part 2](https://blog.ax0x.ai/wearables-and-companions), "democratizing the executive lifestyle" — everyone deserves CEO-level resources. Now $20/month makes that real.
 
-[Part 4](/when-software-becomes-disposable), "disposable software" — one-off applications built for a single person. Claude Code is already doing this routinely.
+[Part 4](https://blog.ax0x.ai/when-software-becomes-disposable), "disposable software" — one-off applications built for a single person. Claude Code is already doing this routinely.
 
-[Part 5](/the-last-mile-of-ai), "the last mile" — 99.99% of people don't know what AI can do. This remains the biggest bottleneck.
+[Part 5](https://blog.ax0x.ai/the-last-mile-of-ai), "the last mile" — 99.99% of people don't know what AI can do. This remains the biggest bottleneck.
 
-[Part 6](/you-are-the-manager), "you are the manager" — the skill isn't coding anymore, it's managing agents. The competitive edge has shifted.
+[Part 6](https://blog.ax0x.ai/you-are-the-manager), "you are the manager" — the skill isn't coding anymore, it's managing agents. The competitive edge has shifted.
 
-[Part 7](/why-claude-code), "why Claude Code" — the harness matters more than the model. Orchestration beats generation.
+[Part 7](https://blog.ax0x.ai/why-claude-code), "why Claude Code" — the harness matters more than the model. Orchestration beats generation.
 
 The paradigm shift has already happened. Not "about to happen," not "might happen" — it has happened. 4% of GitHub commits come from Claude Code. Top developers no longer write code by hand. The $15 trillion information work market is being repriced.
 
@@ -114,4 +114,5 @@ The window won't stay open forever.
 **References:**
 
 - [SemiAnalysis: Claude Code is the Inflection Point](https://newsletter.semianalysis.com/p/claude-code-is-the-inflection-point)
+
 - [Inside Claude Code With Its Creator Boris Cherny (YC / Light Cone)](https://www.youtube.com/watch?v=PQU9o_5rHC4)

@@ -11,7 +11,7 @@ status: "Published"
 
 ## "Help Me Analyze This"
 
-In [Part 5](/the-last-mile-of-ai), I described teaching a non-engineer friend to use Claude Code over a weekend. The infrastructure gap was brutal. The perception gap was even bigger. But the third discovery was the most counterintuitive.
+In [Part 5](https://blog.ax0x.ai/the-last-mile-of-ai), I described teaching a non-engineer friend to use Claude Code over a weekend. The infrastructure gap was brutal. The perception gap was even bigger. But the third discovery was the most counterintuitive.
 
 After my friend learned the basics, he started assigning tasks to Claude Code on his own. His instructions looked like this:
 
@@ -57,7 +57,7 @@ These three phase shifts — search engine, tool, collaborator — are the evolu
 
 The vast majority of people are still at step one. They treat AI as a smarter search engine: give it a question, expect an answer. A smaller group has reached step two, using AI as a tool — but still unidirectional, command-driven. Very few have reached step three, treating AI as a genuine collaborator.
 
-This connects directly to the companion vision I wrote about in [Part 1](/the-companion-vision). An AI companion that truly understands you requires more than memory orchestration and personality modeling on the technical side — **it requires a human willing to be understood.**
+This connects directly to the companion vision I wrote about in [Part 1](https://blog.ax0x.ai/the-companion-vision). An AI companion that truly understands you requires more than memory orchestration and personality modeling on the technical side — **it requires a human willing to be understood.**
 
 If you won't provide context, won't share what you really think, won't invest time building shared understanding with the agent — then no memory system, however sophisticated, can help you. The upper bound of an AI companion's effectiveness isn't determined by AI capability. It's determined by the depth of your engagement.
 
@@ -91,4 +91,4 @@ The question is no longer "can you write code?" It's "can you steer an agent to 
 
 The tools are here. The capability is here. The bottleneck is you — your management skill, your willingness to engage, your ability to think in goals rather than steps.
 
-[Part 7](/why-claude-code) steps back to the bigger picture: why Claude Code specifically became the inflection point, and what it tells us about where this is all heading.
+[Part 7](https://blog.ax0x.ai/why-claude-code) steps back to the bigger picture: why Claude Code specifically became the inflection point, and what it tells us about where this is all heading.
