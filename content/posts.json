@@ -1,5 +1,69 @@
 [
   {
+    "id": "30fe3dcd-5100-8120-9536-f18ab552feda",
+    "title": "AI的最后一公里",
+    "slug": "the-last-mile-of-ai-zh",
+    "summary": "一个周末，一个非工程师朋友，一台电脑——教他用AI Agent的过程让我看到了Agent革命真正的瓶颈：不是技术，不是成本，而是认知。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
+    "part": 5,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-814e-8026-fac53ee72498",
+    "title": "The Last Mile of AI",
+    "slug": "the-last-mile-of-ai",
+    "summary": "A weekend teaching a non-engineer friend to use AI agents revealed the real bottleneck of the agent revolution: not technology, not cost, but cognition.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "Agentic AI Thoughts",
+    "part": 5,
+    "date": 1771747200000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-8138-8937-ef2b552c6995",
+    "title": "当软件变成日抛品",
+    "slug": "when-software-becomes-disposable-zh",
+    "summary": "听完晚点聊对MuleRun创始人陈宇森的访谈后的思考——Claude Code作为通用Agent、日抛型软件，以及Agent经济从理论到现实的碰撞。",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "AI智能体随想",
+    "part": 4,
+    "date": 1771660800000,
+    "fullWidth": false
+  },
+  {
+    "id": "30fe3dcd-5100-818c-9ac1-c68baaf704c8",
+    "title": "When Software Becomes Disposable",
+    "slug": "when-software-becomes-disposable",
+    "summary": "Reflections on a podcast interview with MuleRun's founder — Claude Code as the ultimate General Agent, disposable software, and what happens when the agent economy thesis meets reality.",
+    "status": "Published",
+    "type": "Post",
+    "tags": [
+      "AI",
+      "Agents"
+    ],
+    "series": "Agentic AI Thoughts",
+    "part": 4,
+    "date": 1771660800000,
+    "fullWidth": false
+  },
+  {
     "id": "30ce3dcd-5100-811c-b83c-ce71013646a4",
     "title": "Agent经济：市场、数字分身与代理社交网络",
     "slug": "the-agent-economy-zh",
