@@ -124,10 +124,14 @@ function parseInlineFormatting (text) {
         annotations: { code: true }
       })
     } else if (match[7]) {
-      // [text](url)
+      // [text](url) — convert relative paths to absolute URLs for Notion
+      let url = match[9]
+      if (url.startsWith('/')) {
+        url = 'https://blog.ax0x.ai' + url
+      }
       results.push({
         type: 'text',
-        text: { content: match[8], link: { url: match[9] } }
+        text: { content: match[8], link: { url } }
       })
     }
 

@@ -74,6 +74,18 @@ set -a && source .env.local && set +a && node scripts/upload-to-notion.mjs <path
 
 - When writing or editing articles, **always cross-link other articles** when they are mentioned or referenced. Use markdown links with slug paths: `[Part 3](/the-agent-economy)` (EN) or `[第三篇](/the-agent-economy-zh)` (ZH). ZH articles link to ZH slugs, EN to EN.
 
+## Personal Site Sync (xiax.xyz)
+
+The "Agentic AI Thoughts" series is mirrored to the personal portfolio site at `/Users/xingfanxia/projects/personal/personal_site/blog/`. Only this series (6 parts, EN + ZH = 12 files) is synced — not the full blog content.
+
+### Sync workflow
+
+1. Copy updated `.md` files to `personal_site/blog/`
+2. Run `node build.js` in personal_site to regenerate `blog-content.js`
+3. Commit and push
+
+The personal_site uses a terminal-style UI. `content.js` has two places to update when adding new posts: (1) the `blogPosts` registry (maps post IDs to files + language toggle), and (2) an `ls`-style listing that shows files in the terminal. `build.js` separately maps filenames to post IDs for content generation.
+
 ## Environment Variables
 
 - `NOTION_ACCESS_TOKEN` — Notion integration token
