@@ -1,6 +1,6 @@
 ---
 title: "Why Claude Code"
-date: "2026-02-23"
+date: "2026-02-22"
 summary: "SemiAnalysis calls Claude Code the inflection point for AI agents. As someone who works inside Claude Code every day, I want to explain why Anthropic built it, and what it actually changed."
 tags: ["AI", "Agents"]
 series: "Agentic AI Thoughts"

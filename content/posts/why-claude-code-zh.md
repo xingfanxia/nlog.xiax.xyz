@@ -1,6 +1,6 @@
 ---
 title: "为什么是 Claude Code"
-date: "2026-02-23"
+date: "2026-02-22"
 summary: "SemiAnalysis 的报告说 Claude Code 是 AI Agent 的拐点。作为一个每天在 Claude Code 里工作的人，我想说说为什么是 Anthropic 做出了它，以及它到底改变了什么。"
 tags: ["AI", "Agents"]
 series: "AI智能体随想"
