@@ -50,6 +50,7 @@ export default function BlogPost ({ post, blockMap, emailHash, seriesNav, langTo
         blockMap={blockMap}
         emailHash={emailHash}
         fullWidth={fullWidth}
+        seriesNav={seriesNav}
       />
 
       {/* Series navigation */}
@@ -142,7 +143,10 @@ export async function getStaticProps ({ params: { slug } }) {
         currentPart: post.part ?? currentIndex + 1,
         totalParts: seriesData.count,
         prevPost,
-        nextPost
+        nextPost,
+        allPosts: seriesPosts.map((p, i) => ({
+          slug: p.slug, title: p.title, part: p.part ?? i + 1
+        }))
       }
     }
   }

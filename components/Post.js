@@ -7,6 +7,7 @@ import FormattedDate from '@/components/FormattedDate'
 import TagItem from '@/components/TagItem'
 import NotionRenderer from '@/components/NotionRenderer'
 import TableOfContents from '@/components/TableOfContents'
+import SeriesToC from '@/components/SeriesToC'
 
 /**
  * A post renderer
@@ -21,7 +22,7 @@ import TableOfContents from '@/components/TableOfContents'
  */
 export default function Post (props) {
   const BLOG = useConfig()
-  const { post, blockMap, emailHash, fullWidth = false } = props
+  const { post, blockMap, emailHash, fullWidth = false, seriesNav } = props
   const { dark } = useTheme()
 
   return (
@@ -63,7 +64,17 @@ export default function Post (props) {
         </nav>
       )}
       <div className="self-stretch -mt-4 flex flex-col items-center lg:flex-row lg:items-stretch">
-        {!fullWidth && <div className="flex-1 hidden lg:block" />}
+        {!fullWidth && (
+          <div className={cn('flex-1 hidden lg:block', !fullWidth && 'lg:min-w-[160px]')}>
+            {seriesNav && (
+              <SeriesToC
+                seriesName={seriesNav.seriesName}
+                allPosts={seriesNav.allPosts}
+                currentPart={seriesNav.currentPart}
+              />
+            )}
+          </div>
+        )}
         <div className={fullWidth ? 'flex-1 pr-4' : 'flex-none w-full max-w-2xl px-4'}>
           <NotionRenderer recordMap={blockMap} fullPage={false} darkMode={dark} />
         </div>
@@ -81,5 +92,6 @@ Post.propTypes = {
   post: PropTypes.object.isRequired,
   blockMap: PropTypes.object.isRequired,
   emailHash: PropTypes.string.isRequired,
-  fullWidth: PropTypes.bool
+  fullWidth: PropTypes.bool,
+  seriesNav: PropTypes.object
 }

@@ -53,7 +53,7 @@ What I want to build is memory that captures **the essence of who you are**. Eac
 
 Here's a concrete example: you mention three different career frustrations over three months. A summary-based system stores "user is frustrated with career." A personality-model system notices that all three frustrations share a pattern — you're not actually unhappy with the work, you're unhappy with not being recognized. That insight changes the advice the companion gives. That's the difference between remembering what you said and understanding who you are.
 
-Think of it as building a "virtual you" — an internal model deep enough that the AI can predict not just what you'd say, but *why* you'd say it. (In Part 3, I'll explore how this same model becomes your "digital twin" — a proxy that socializes on your behalf.)
+Think of it as building a "virtual you" — an internal model deep enough that the AI can predict not just what you'd say, but *why* you'd say it. (In [Part 3](/the-agent-economy), I'll explore how this same model becomes your "digital twin" — a proxy that socializes on your behalf.)
 
 That's the hard part. That's the moat.
 
@@ -87,7 +87,7 @@ Each agent owns a function, like a biological system. But what makes it an organ
 
 You're not building a chatbot — you're building an **organism**.
 
-This is exactly what I've been prototyping with [OpenClaw](https://github.com/xingfanxia/openclaw). SOUL.md defines the personality — not just traits, but ambitions, flaws, emotional range. It's a structured document that the AI references before every response to stay in character. HEARTBEAT.md controls autonomous initiative — a scheduling system where the agent evaluates whether to reach out based on time elapsed, conversation patterns, and detected emotional state. MEMORY.md handles continuity across conversations — extracting personality signals and storing them as retrievable context for future sessions.
+This is exactly what I've been prototyping with [OpenClaw](https://github.com/xingfanxia/openclaw). [SOUL.md](http://soul.md/) defines the personality — not just traits, but ambitions, flaws, emotional range. It's a structured document that the AI references before every response to stay in character. [HEARTBEAT.md](http://heartbeat.md/) controls autonomous initiative — a scheduling system where the agent evaluates whether to reach out based on time elapsed, conversation patterns, and detected emotional state. [MEMORY.md](http://memory.md/) handles continuity across conversations — extracting personality signals and storing them as retrievable context for future sessions.
 
 The early results are... interesting. When an AI has continuity and character, the line between tool and entity gets blurry fast.
 

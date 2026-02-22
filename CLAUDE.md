@@ -70,6 +70,10 @@ set -a && source .env.local && set +a && node scripts/upload-to-notion.mjs <path
 | `scripts/restore-to-notion.mjs` | Restore content/ → Notion |
 | `scripts/upload-to-notion.mjs` | Upload individual markdown files |
 
+## Content Guidelines
+
+- When writing or editing articles, **always cross-link other articles** when they are mentioned or referenced. Use markdown links with slug paths: `[Part 3](/the-agent-economy)` (EN) or `[第三篇](/the-agent-economy-zh)` (ZH). ZH articles link to ZH slugs, EN to EN.
+
 ## Environment Variables
 
 - `NOTION_ACCESS_TOKEN` — Notion integration token
